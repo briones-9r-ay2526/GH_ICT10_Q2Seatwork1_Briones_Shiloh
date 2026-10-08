@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- PYTHON -->
+    <link rel="stylesheet" href="https://pyscript.net/releases/2026.7.3/core.css" />
+    <script type="module" src="https://pyscript.net/releases/2026.7.3/core.js"></script>
+    
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+    <!-- FONT -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <title>Seatwork 1: Nickname Atlas</title>
+</head>
+<body>
+    <div class="atlas-container">
+        <div class="atlas-card">
+            <div class="atlas-header">
+                <div class="atlas-label">WESTERN EUROPE</div>
+                <h1>THE ATLAS OF<br><span>NICKNAMES</span></h1>
+                <div class="gold-line"></div>
+            </div>
+
+            <div class="atlas-content">
+                <h2>Explore the Map</h2>
+
+                <p class="instruction">
+                    Enter a Western European country to reveal its famous nickname.
+                </p>
+
+                <div class="input-section">
+                    <label for="country_input">COUNTRY</label>
+                    <input type="text" id="country_input" class="form-control country-input" placeholder="e.g. Germany, France, Switzerland">
+                    <button type="button" class="btn reveal-btn" py-click="get_nickname">REVEAL NICKNAME</button>
+                </div>
+
+                <div id="output" class="output-box"></div>
+            </div>
+
+            <div class="atlas-footer">
+                <span>✦</span>Seatwork 1 · 2nd Quarter · 9 nations of Western Europe<span>✦</span>
+            </div>
+        </div>
+    </div>
+
+    <py-script src="main.py"></py-script>
+</body>
+</html>

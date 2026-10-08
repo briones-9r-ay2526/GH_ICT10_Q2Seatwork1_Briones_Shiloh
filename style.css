@@ -1,0 +1,155 @@
+body{
+    margin: 0;
+    min-height: 100vh;
+    background-color: #071a33;
+    font-family: 'Poppins', sans-serif;
+    color: #071a33;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+.atlas-container{
+    width: 100%;
+    max-width: 850px;
+}
+
+.atlas-card{
+    background-color: #f7f1df;
+    border: 3px solid #d4af37;
+    border-radius: 8px;
+    box-shadow:
+        0 0 0 8px #071a33,
+        0 0 0 10px #d4af37,
+        0 20px 50px rgba(0, 0, 0, 0.4);
+    overflow: hidden;
+}
+
+.atlas-header{
+    background-color: #0b2345;
+    color: #f7f1df;
+    text-align: center;
+    padding: 45px 30px 35px;
+    position: relative;
+}
+
+.atlas-label{
+    color: #d4af37;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 5px;
+    margin-bottom: 15px;
+}
+
+.atlas-header h1{
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(2.5rem, 7vw, 4.5rem);
+    line-height: 0.95;
+    margin: 0;
+    letter-spacing: 2px;
+}
+
+.atlas-header h1 span{
+    color: #d4af37;
+}
+
+.gold-line{
+    width: 100px;
+    height: 3px;
+    background-color: #d4af37;
+    margin: 25px auto 0;
+}
+
+.atlas-content{
+    text-align: center;
+    padding: 45px 30px 50px;
+}
+
+.atlas-content h2{
+    font-family: 'Playfair Display', serif;
+    color: #0b2345;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.instruction{
+    max-width: 500px;
+    margin: 0 auto 30px;
+    color: #536070;
+    font-size: 0.95rem;
+}
+
+.input-section{
+    max-width: 550px;
+    margin: auto;
+    text-align: left;
+}
+
+.input-section label{
+    display: block;
+    color: #0b2345;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin-bottom: 8px;
+}
+
+.country-input{
+    height: 52px;
+    border: 2px solid #c8b98a;
+    border-radius: 4px;
+    background-color: #fffdf5;
+    padding: 0 15px;
+    font-family: 'Poppins', sans-serif;
+    transition: 0.2s;
+}
+
+.country-input:focus{
+    border-color: #d4af37;
+    box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.2);
+}
+
+.reveal-btn{
+    width: 100%;
+    margin-top: 15px;
+    height: 52px;
+    background-color: #0b2345;
+    color: #f7f1df;
+    border: 2px solid #d4af37;
+    border-radius: 4px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    transition: all 0.2s ease;
+}
+
+.reveal-btn:hover{
+    background-color: #d4af37;
+    color: #071a33;
+    transform: translateY(-2px);
+}
+
+.output-box{
+    max-width: 550px;
+    min-height: 80px;
+    margin: 30px auto 0;
+    padding: 20px;
+    border-top: 2px solid #d4af37;
+    border-bottom: 2px solid #d4af37;
+    color: #0b2345;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.25rem;
+}
+
+.atlas-footer{
+    background-color: #0b2345;
+    color: #d4af37;
+    text-align: center;
+    padding: 15px;
+    font-size: 0.7rem;
+    letter-spacing: 3px;
+}
+
+.atlas-footer span{
+    margin: 0 10px;
+}
